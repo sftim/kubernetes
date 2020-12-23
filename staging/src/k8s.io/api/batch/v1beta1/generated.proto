@@ -61,7 +61,7 @@ message CronJobList {
 
 // CronJobSpec describes how the job execution will look like and when it will actually run.
 message CronJobSpec {
-  // The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
+  // The schedule in Cron format, see https://docs.k8s.io/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax
   optional string schedule = 1;
 
   // Optional deadline in seconds for starting the job if it misses scheduled
